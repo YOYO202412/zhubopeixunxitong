@@ -1,3 +1,4 @@
+import Script from 'next/script'
 // pages/exam/result.js - 修复版本
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'

@@ -1,3 +1,4 @@
+import Script from 'next/script'
 // pages/admin/index.js
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
@@ -123,7 +124,7 @@ export default function AdminPanel() {
     <div className="min-h-screen bg-gray-50">
       <Head>
         <title>管理员后台 - 九天乐传媒</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"strategy="lazyOnload" />
       </Head>
 
       {/* 导航栏 */}
