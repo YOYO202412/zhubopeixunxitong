@@ -198,7 +198,7 @@ export default function UserPanel() {
           <div className="space-y-4">
             {examRecords.length > 0 ? (
               examRecords.map(record => {
-                const module = examModules.find(m => m.id === record.module_id)
+                const userModule = examModules.find(m => m.id === record.module_id)
                 return (
                   <div key={record.id} className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                     <div>

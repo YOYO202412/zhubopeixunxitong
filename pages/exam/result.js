@@ -40,7 +40,7 @@ export default function ExamResult() {
     )
   }
 
-  const module = examModules.find(m => m.id === parseInt(moduleId))
+  const examModule = examModules.find(m => m.id === examState.moduleId)
   const numericScore = parseInt(score)
   const isPassed = numericScore >= 60
 

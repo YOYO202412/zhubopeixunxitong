@@ -1,3 +1,8 @@
+// pages/index.js - 在文件顶部添加
+console.log('环境变量检查:', {
+  supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL ? '已设置' : '未设置',
+  supabaseKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ? '已设置' : '未设置'
+})
 // pages/index.js - 修复 Hydration 错误版本
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
